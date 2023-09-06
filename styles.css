@@ -5,9 +5,10 @@
 form {
     display: flex;
     flex-direction: column;
-    border: red dotted 2px;
+    border: black solid 2px;
     color: black;
     padding: 2rem;
+    background-color: lightgray;
 }
 
 form label {
@@ -17,4 +18,22 @@ form label {
 body {
     display: flex;
     justify-content: center;
+    background-image: url("mainbg.avif");
 }
+
+input[type=text] {
+    padding: .5rem;
+}
+
+
+.formsubmit {
+    margin-top: 5%;
+}
+
+.pageheader {
+    border: blue dotted 2px;
+    text-align: center;
+}
+
+
+

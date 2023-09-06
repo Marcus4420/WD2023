@@ -10,8 +10,8 @@
 </head>
 <body>
     <main>
-        <h1>My Music App</h1>
         <form>
+            <h1 class="pageheader">🎶SDU Jammer🎶</h1>
             <label for="Name">Enter the Album name:</label>
             <input type="text" id="Name" name="Name" maxlength="255" minlength="1" placeholder="Sound of Silence">
           
@@ -35,22 +35,13 @@
             </datalist>
 
             <label for="Description">Describe the music:</label>
-            <input type="text" id="Description" name="Description" minlength="1">
+            <input class="test" type="text" id="Description" name="Description" minlength="1">
             
             <label for="trackno">Enter the amount of tracks (10 or below)</label>
             <input type="number" id="trackno" name="trackno" min="1" max="10">
-            
-            <input type="submit">
-          </form>
 
-          <p>
-            Name of the album: text<br>
-            Release year: number<br>
-            Artist: selected from a list of options<br>
-            Type: single (single song), EP (not enough to be considered a full album), album<br>
-            Description: text area<br>
-            Tracks: text, only 10 inputs<br>
-          </p>
+            <input type="submit" class="formsubmit">
+          </form>
     </main>
 </body>
 </html>
