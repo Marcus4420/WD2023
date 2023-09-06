@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>My Music App</h1>
+        <form>
+            <label for="Name">Enter the Album name:</label>
+            <input type="text" id="Name" name="Name" maxlength="255" minlength="1" placeholder="Sound of Silence">
+          
+            <label for="Release">Enter a release date after 1900-01-01:</label>
+            <input type="date" id="Release" name="Release" min="1900-01-02">
+          
+            <label for="Artist">Pick the main artist:</label>
+            <input list="Artists" name="Artist" id="Artist" placeholder="John Doe">
+            <datalist id="Artists">
+              <option value="Britney Spears">
+              <option value="Greenday">
+              <option value="The Beatles">
+            </datalist>
+
+            <label for="Type">Pick the type:</label>
+            <input list="Types" name="Type" id="Type">
+            <datalist id="Types">
+                <option value="Single song">
+                <option value="EP">
+                <option value="Album">
+            </datalist>
+
+            <label for="Description">Describe the music:</label>
+            <input type="text" id="Description" name="Description" minlength="1">
+            
+            <label for="trackno">Enter the amount of tracks (10 or below)</label>
+            <input type="number" id="trackno" name="trackno" min="1" max="10">
+            
+            <input type="submit">
+          </form>
+
+          <p>
+            Name of the album: text<br>
+            Release year: number<br>
+            Artist: selected from a list of options<br>
+            Type: single (single song), EP (not enough to be considered a full album), album<br>
+            Description: text area<br>
+            Tracks: text, only 10 inputs<br>
+          </p>
+    </main>
+</body>
+</html>
